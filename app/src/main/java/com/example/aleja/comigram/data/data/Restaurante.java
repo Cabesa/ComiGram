@@ -1,4 +1,4 @@
-package com.example.aleja.comigram.data;
+package com.example.aleja.comigram.data.data;
 
 import java.util.UUID;
 
@@ -16,7 +16,7 @@ public class Restaurante {
     private String descripcion;
     private String foto;
 
-    public Restaurante(String nombre, String categoria, String longitud, String latitud, String valoraciom, String descripcion, String foto )
+    public Restaurante(String nombre, String categoria, String longitud, String latitud, String valoracion, String descripcion, String foto )
     {
         this.id = UUID.randomUUID().toString();
         this.nombre=nombre;
