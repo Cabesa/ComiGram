@@ -1,7 +1,8 @@
 package com.example.aleja.comigram.data.data;
 
+import android.content.ContentValues;
 import java.util.UUID;
-
+import com.example.aleja.comigram.data.data.RestauranteContract.RestauranteEntry;
 /**
  Entidad Restaurante
  */
@@ -26,6 +27,18 @@ public class Restaurante {
         this.latitud=latitud;
         this.valoracion=valoracion;
         this.foto=foto;
+    }
+    public ContentValues toContentValues() {
+        ContentValues values = new ContentValues();
+        values.put(RestauranteEntry.ID, id);
+        values.put(RestauranteEntry.NOMBRE, nombre);
+        values.put(RestauranteEntry.CATEGORIA, categoria);
+        values.put(RestauranteEntry.DESCRIPCION, descripcion);
+        values.put(RestauranteEntry.LONGITUD, longitud);
+        values.put(RestauranteEntry.LATITUD, latitud);
+        values.put(RestauranteEntry.VALORACION, valoracion);
+        values.put(RestauranteEntry.FOTO, foto);
+        return values;
     }
 
     public String getId() {
