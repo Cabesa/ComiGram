@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aleja.definitiva.NuevoRestauranteActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="507dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="3dp">
+
+        <TextView
+            android:id="@+id/lblNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtNombre"
+            android:layout_alignParentStart="true"
+            android:text="@string/lblNombre" />
+
+        <EditText
+            android:id="@+id/txtNombreNuevo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/lblNombre"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/lblCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lblNombre"
+            android:layout_marginTop="19dp"
+            android:text="@string/lblCategoria" />
+
+        <Spinner
+            android:id="@+id/spinCategoriaNuevo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/barraValoracionNuevo"
+            android:layout_alignTop="@+id/lblCategoria" />
+
+        <TextView
+            android:id="@+id/lblDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spinCategoriaNuevo"
+            android:layout_marginTop="17dp"
+            android:text="@string/lblDescripcion" />
+
+        <EditText
+            android:id="@+id/txtDescripcionNuevo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lblDescripcion"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <RatingBar
+            android:id="@+id/barraValoracionNuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDescripcionNuevo"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5" />
+
+        <ImageView
+            android:id="@+id/imgNuevo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabNuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_toStartOf="@+id/imgNuevo"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:layout_editor_absoluteX="172dp"
+            tools:layout_editor_absoluteY="455dp" />
+
+        <Button
+            android:id="@+id/btnFotoNuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imgNuevo"
+            android:layout_below="@+id/barraValoracionNuevo"
+            android:layout_marginStart="26dp"
+            android:onClick="fotoNuevo"
+            android:text="@string/btnFoto" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapNuevo"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/barraValoracionNuevo" />
+
+        <Button
+            android:id="@+id/btnGaleria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imgNuevo"
+            android:layout_alignStart="@+id/btnFotoNuevo"
+            android:onClick="galeriaNuevo"
+            android:text="@string/btnGaleria" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
