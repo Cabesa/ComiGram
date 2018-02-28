@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">ComiGram</string>
+    <string name="action_settings">Settings</string>
+    <string name="btnMapa">Mapa</string>
+    <string name="title_activity_ver_restaurante">Ver Restaurante</string>
+    <string name="lblNombre">Nombre:</string>
+    <string name="lblDescripcion">Descripcion:</string>
+    <string name="lblCategoria">Categoria:</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_delete">Borrar</string>
+    <string name="restaurente_eliminar_titulo">Eliminar Restaurante</string>
+    <string name="restaurante_eliminar_mensaje">¿Está seguro que desea eliminar el restaurante?</string>
+    <string name="restaurante_eliminar_confirmacion">Restaurante Borrado</string>
+    <string-array name="categorias">
+        <item>Chino</item>
+        <item>Americano</item>
+        <item>Italiano</item>
+        <item>Turco</item>
+        <item>Mexicano</item>
+        <item>Rápida</item>
+        <item>Española</item>
+    </string-array>
+    <string-array name="busqueda">
+        <item>Ver todos</item>
+        <item>Chino</item>
+        <item>Americano</item>
+        <item>Italiano</item>
+        <item>Turco</item>
+        <item>Mexicano</item>
+        <item>Rápida</item>
+        <item>Española</item>
+    </string-array>
+    <string name="btnFoto">Foto</string>
+    <string name="btnGaleria">Galeria</string>
+    <string name="btnRecargar">Recargar</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="btnUbicacion">Ubicación Actual</string>
+</resources>
