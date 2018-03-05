@@ -8,24 +8,24 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="507dp"
+        android:layout_height="510dp"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="3dp">
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/lblNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/txtNombre"
+            android:layout_alignBottom="@+id/txtNombreNuevo"
             android:layout_alignParentStart="true"
             android:text="@string/lblNombre" />
 
         <EditText
             android:id="@+id/txtNombreNuevo"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="40dp"
             android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/lblNombre"
+            android:layout_toEndOf="@+id/lblCategoria"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -40,10 +40,10 @@
 
         <Spinner
             android:id="@+id/spinCategoriaNuevo"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/barraValoracionNuevo"
-            android:layout_alignTop="@+id/lblCategoria" />
+            android:layout_alignTop="@+id/lblCategoria"
+            android:layout_toEndOf="@+id/lblCategoria" />
 
         <TextView
             android:id="@+id/lblDescripcion"
@@ -56,10 +56,10 @@
 
         <EditText
             android:id="@+id/txtDescripcionNuevo"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="100dp"
-            android:layout_alignEnd="@+id/txtNombreNuevo"
-            android:layout_alignTop="@+id/lblDescripcion"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lblDescripcion"
             android:ems="10"
             android:inputType="textMultiLine" />
 
@@ -67,64 +67,69 @@
             android:id="@+id/barraValoracionNuevo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/txtDescripcionNuevo"
-            android:layout_marginStart="28dp"
-            android:layout_toEndOf="@+id/mapNuevo"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="22dp"
             android:layout_weight="1"
             android:numStars="5"
             android:rating="0"
             android:stepSize="0.5" />
 
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapNuevo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
+
         <ImageView
             android:id="@+id/imgNuevo"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_below="@+id/lblDescripcion"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="68dp"
-            android:layout_toEndOf="@+id/btnFotoNuevo"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/mapNuevo"
+            android:adjustViewBounds="false"
             app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fabNuevo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/btnGaleria"
-            android:layout_alignStart="@+id/barraValoracionNuevo"
+            android:layout_alignEnd="@+id/btnMapaNuevo"
+            android:layout_alignTop="@+id/barraValoracionNuevo"
             android:layout_gravity="bottom|end"
-            android:layout_marginStart="15dp"
+            android:layout_marginTop="31dp"
             app:srcCompat="@android:drawable/ic_input_add"
             tools:layout_editor_absoluteX="172dp"
-            tools:layout_editor_absoluteY="455dp" />
+            tools:layout_editor_absoluteY="519dp" />
 
         <Button
             android:id="@+id/btnFotoNuevo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/barraValoracionNuevo"
-            android:layout_toEndOf="@+id/btnGaleria"
-            android:onClick="fotoNuevo"
+            android:layout_alignBottom="@+id/txtDescripcionNuevo"
+            android:layout_toStartOf="@+id/mapNuevo"
+            style="@style/Boton"
             android:text="@string/btnFoto" />
 
-        <com.google.android.gms.maps.MapView
-            android:id="@+id/mapNuevo"
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/txtDescripcionNuevo" />
-
         <Button
-            android:id="@+id/btnGaleria"
+            android:id="@+id/btnMapaNuevo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/btnFotoNuevo"
-            android:layout_alignBottom="@+id/btnFotoNuevo"
-            android:layout_marginStart="13dp"
-            android:layout_toEndOf="@+id/fabNuevo"
+            android:layout_alignBottom="@+id/mapNuevo"
+            android:layout_alignStart="@+id/mapNuevo"
+            style="@style/Boton"
+            android:text="@string/btnUbicacion" />
+
+        <Button
+            android:id="@+id/btnGaleriaNuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnFotoNuevo"
+            android:layout_centerVertical="true"
             android:onClick="galeriaNuevo"
+            style="@style/Boton"
             android:text="@string/btnGaleria" />
-
     </RelativeLayout>
-
-
 </android.support.constraint.ConstraintLayout>

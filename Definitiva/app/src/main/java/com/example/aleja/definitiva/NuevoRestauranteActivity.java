@@ -166,6 +166,8 @@ public class NuevoRestauranteActivity extends AppCompatActivity implements OnMap
         Restaurante restaurante = new Restaurante(nombre, categoria, descripcion, foto, bar.getRating()+"", latitud+"", longitud+"");
 
         new AddRestauranteTask().execute(restaurante);
+        foto=" ";
+        foto="";
 
     }
 

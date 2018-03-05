@@ -26,6 +26,7 @@
             android:layout_alignParentTop="true"
             android:layout_toEndOf="@+id/spinBusqueda"
             android:onClick="IrMapa"
+			style="@style/Boton"
             android:text="@string/btnMapa" />
 
         <ListView

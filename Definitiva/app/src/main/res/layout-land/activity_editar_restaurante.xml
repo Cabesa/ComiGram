@@ -110,6 +110,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/txtDescripcionEdit"
             android:layout_toStartOf="@+id/mapEditar"
+			 style="@style/Boton"
             android:text="@string/btnFoto" />
 
         <Button
@@ -118,6 +119,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/mapEditar"
             android:layout_alignStart="@+id/mapEditar"
+			 style="@style/Boton"
             android:text="@string/btnUbicacion" />
 
         <Button
@@ -127,6 +129,7 @@
             android:layout_alignStart="@+id/btnFotoEdit"
             android:layout_centerVertical="true"
             android:onClick="galeriaEdit"
+			 style="@style/Boton"
             android:text="@string/btnGaleria" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

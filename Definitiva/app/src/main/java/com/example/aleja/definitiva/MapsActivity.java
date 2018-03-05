@@ -25,7 +25,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private RestauranteDbHelper mRestaurantesDbHelper;
     private String categorias;
     private String categoria[];
-    private static int[] numeros={2131230867,2131230810,2131231057,2131231138,2131231058,2131231134,2131230893};
+    private static int[] numeros={2131230868,2131230810,2131231058,2131231139,2131231059,2131231135,2131230894};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
         categorias=getIntent().getStringExtra("categorias");
         mRestaurantesDbHelper=new RestauranteDbHelper(getApplicationContext());
-
 
     }
 

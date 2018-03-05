@@ -52,7 +52,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;;import java.io.BufferedInputStream;
 import java.io.File;
 
-public class EditarRestauranteActivity extends AppCompatActivity implements OnMapReadyCallback,LocationListener,
+public class EditarRestauranteActivity extends AppCompatActivity implements OnMapReadyCallback,
+        LocationListener,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener{
 
@@ -364,6 +365,7 @@ public class EditarRestauranteActivity extends AppCompatActivity implements OnMa
         longitud=loc.getLongitude();
 
     }
+
 
     private boolean isLocationEnabled() {
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);

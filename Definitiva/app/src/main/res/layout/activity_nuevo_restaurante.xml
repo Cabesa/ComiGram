@@ -102,6 +102,7 @@
             android:layout_below="@+id/barraValoracionNuevo"
             android:layout_marginStart="26dp"
             android:onClick="fotoNuevo"
+			style="@style/Boton"
             android:text="@string/btnFoto" />
 
         <com.google.android.gms.maps.MapView
@@ -118,6 +119,7 @@
             android:layout_above="@+id/imgNuevo"
             android:layout_alignStart="@+id/btnFotoNuevo"
             android:onClick="galeriaNuevo"
+			style="@style/Boton"
             android:text="@string/btnGaleria" />
 
     </RelativeLayout>

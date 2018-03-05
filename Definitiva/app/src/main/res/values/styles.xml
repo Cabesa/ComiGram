@@ -17,4 +17,18 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="Boton" parent="android:Widget.Button">
+
+        <item name="android:textColor">@color/boton</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_width">149dp</item>
+        <item name="android:layout_height" >51dp</item>
+        <item name="android:background" >@drawable/buttonshape</item>
+       <item name="android:shadowColor">@color/sombraboton</item>
+        <item name="android:shadowDx" >0 </item>
+       <item name="android:shadowDy">0</item>
+       <item name="android:shadowRadius" >0</item>
+    </style>
+
+
 </resources>
