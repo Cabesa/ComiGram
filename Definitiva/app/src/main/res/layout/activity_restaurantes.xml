@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
+    style="@style/fondo"
     tools:context="com.example.aleja.definitiva.RestaurantesActivity">
 
     <android.support.design.widget.AppBarLayout

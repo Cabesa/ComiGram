@@ -23,7 +23,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
             android:padding="2dp"
-            android:textColor="#489e37" />
+            android:textColor="#489e37"
+            style="@style/MiEstilo"/>
 
         <RatingBar
             android:id="@+id/barraValoracion"

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    style="@style/fondo"
     tools:context="com.example.aleja.definitiva.NuevoRestauranteActivity">
 
     <RelativeLayout
@@ -18,7 +19,8 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/txtNombreNuevo"
             android:layout_alignParentStart="true"
-            android:text="@string/lblNombre" />
+            android:text="@string/lblNombre"
+            style="@style/MiEstilo"/>
 
         <EditText
             android:id="@+id/txtNombreNuevo"
@@ -36,7 +38,8 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/lblNombre"
             android:layout_marginTop="19dp"
-            android:text="@string/lblCategoria" />
+            android:text="@string/lblCategoria"
+            style="@style/MiEstilo"/>
 
         <Spinner
             android:id="@+id/spinCategoriaNuevo"
@@ -52,7 +55,8 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/spinCategoriaNuevo"
             android:layout_marginTop="17dp"
-            android:text="@string/lblDescripcion" />
+            android:text="@string/lblDescripcion"
+            style="@style/MiEstilo"/>
 
         <EditText
             android:id="@+id/txtDescripcionNuevo"

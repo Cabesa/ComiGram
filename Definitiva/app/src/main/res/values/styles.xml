@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -13,12 +14,15 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="fondo">
+        <item name="android:background">@drawable/fondo</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="Boton" parent="android:Widget.Button">
-
         <item name="android:textColor">@color/boton</item>
         <item name="android:textSize">25sp</item>
         <item name="android:layout_width">149dp</item>
@@ -28,6 +32,11 @@
         <item name="android:shadowDx" >0 </item>
        <item name="android:shadowDy">0</item>
        <item name="android:shadowRadius" >0</item>
+    </style>
+    <style name="MiEstilo"
+        parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:typeface">serif</item>
     </style>
 
 
