@@ -6,4 +6,6 @@
     <color name="boton">#523A10</color>
     <color name="sombraboton">#A8A8A8</color>
     <color name="texto">#323280</color>
+    <color name="texto2">#401E15</color>
+    <color name="backgroundtext">#C7CEF5</color>
 </resources>

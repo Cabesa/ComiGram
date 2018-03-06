@@ -35,11 +35,13 @@ public class RestauranteDbHelper extends SQLiteOpenHelper {
         mockData(db);
     }
     private void mockData(SQLiteDatabase sqLiteDatabase) {
+
+
+      /*
         mockRestaurante(sqLiteDatabase, new Restaurante("American Restaurant", "Americano", "Es una pasada, atienden muy bien y la comida muy buena.", "", "5", "37.399905", "-5.925305"));
         mockRestaurante(sqLiteDatabase, new Restaurante("La torre de PIZZA", "Italiano", "He pedido una pizza y estaba muy buena, pero ha tardado un poco.", "", "3.5", "37.404661", "-5.994504"));
 
-
-      /*  mockRestaurante(sqLiteDatabase, new Restaurante("El kebab de la Meca", "Turco", "37.413740", "-5.965467", "8", "El trato muy bueno y no ha tardado nada en traernos la comida. Lo único malo es el precio, un poco caro pero todo estaba muy bueno., ""));
+      mockRestaurante(sqLiteDatabase, new Restaurante("El kebab de la Meca", "Turco", "37.413740", "-5.965467", "8", "El trato muy bueno y no ha tardado nada en traernos la comida. Lo único malo es el precio, un poco caro pero todo estaba muy bueno., ""));
 
         mockRestaurante(sqLiteDatabase, new Restaurante("La lata que cole pol los lincones", "Chino", "37.404510", "-5.973669", "5", "El trato es algo malo, no entienden bien nuestro idioma y algunas veces se equivocan en el pedido. El 5 se lo doy por que es un restaurante bonito y la comida no está mala", ""));
 

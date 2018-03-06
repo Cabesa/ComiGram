@@ -38,6 +38,12 @@
         <item name="android:textColor">@color/texto</item>
         <item name="android:typeface">serif</item>
     </style>
+    <style name="MiEstilo2"
+        parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/texto2</item>
+        <item name="android:background">@color/backgroundtext</item>
+        <item name="android:typeface">serif</item>
+    </style>
 
 
 </resources>
